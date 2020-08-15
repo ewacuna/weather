@@ -1,0 +1,197 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+body {
+    background: #9a5ae8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* PHONE */
+.bg {
+    background: red;
+    background: #29b3db;
+    background: linear-gradient(to bottom, #29b3db 0%, #9a5ae8 100%);
+    background: -moz-linear-gradient(top, #29b3db 0%, #9a5ae8 100%);
+    background: -webkit-linear-gradient(top, #29b3db 0%, #9a5ae8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#29b3db', endColorstr='#9a5ae8', GradientType=0);
+    height: 100%;
+    position: fixed;
+    width: 100%;
+}
+
+.phone {
+    background-color: #524662;
+    border-radius: 20px;
+    height: 480px;
+    left: 50%;
+    margin-left: -172px;
+    margin-top: -304px;
+    padding: 64px 12px 64px;
+    position: absolute;
+    top: 50%;
+    width: 320px;
+}
+
+.phone:after {
+    background-color: #41354F;
+    border-radius: 50%;
+    content: " ";
+    display: table;
+    height: 42px;
+    left: 50%;
+    margin-left: -21px;
+    margin-top: 10px;
+    position: absolute;
+    width: 42px;
+}
+
+.phone:before {
+    background-color: #41354F;
+    border-radius: 5px;
+    content: " ";
+    display: table;
+    height: 8px;
+    left: 50%;
+    margin-left: -32px;
+    margin-top: -35px;
+    position: absolute;
+    width: 64px;
+}
+
+.screen {
+    align-items: center;
+    background: url(./icons/background.svg);
+    background-size: cover;
+    display: flex;
+    height: 480px;
+    width: 320px;
+}
+
+@media only screen and (max-width: 768px) {
+    .phone {
+        background: transparent;
+        box-sizing: border-box;
+        height: 100%;
+        left: 0;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .phone:before,
+    .phone:after {
+        content: "";
+        display: none;
+    }
+
+    .screen {
+        height: 100%;
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+/* WEATHER CARD */
+.container {
+    background: rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 300px;
+}
+
+.app-title {
+    border-radius: 10px 10px 0 0;
+    height: 50px;
+    width: 300px;
+}
+
+.app-title p {
+    color: #293251;
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.notification {
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p {
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.weather-container {
+    height: 260px;
+    width: 300px;
+}
+
+.weather-icon {
+    height: 128px;
+    width: 300px;
+}
+
+.weather-icon img {
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value {
+    height: 60px;
+    width: 300px;
+}
+
+.temperature-value p {
+    color: #293251;
+    cursor: pointer;
+    font-size: 4em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.temperature-value span {
+    color: #293251;
+    font-size: 0.5em;
+}
+
+.temperature-description p {
+    padding: 8px;
+    margin: 0;
+    color: #293251;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location p {
+    color: #293251;
+    font-size: 0.8em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
